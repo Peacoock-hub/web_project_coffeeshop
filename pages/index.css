@@ -125,16 +125,14 @@
 }
 
 .recipes {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   background-image: url("../images/background_recipes.svg");
   background-color: #0a2750;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 720px;
-  max-height: 800px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
   color: #ffffff;
 }
 
@@ -186,52 +184,55 @@
   padding: 0;
 }
 
+.form {
+  max-width: 385px;
+}
+
 .reservation {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/background_reservation.svg);
   background-color: #d9e7ff;
-  background-image: url("../images/background_reservation.svg");
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 0;
 }
 
 .reservation__title {
+  margin: 0px auto 80px;
   padding-top: 100px;
-  margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 80px;
-  text-align: center;
-  font-family: Inter;
-  font-style: normal;
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
 }
 
 .reservation__form {
-  max-width: 385px;
-  margin: auto;
+  margin: 0 auto 120px;
 }
 
-.form__lable {
-  display: block;
+.form__label {
+  display: inline;
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  margin: 0;
+  margin-left: 10px;
+  margin-top: 32px;
 }
 
-.form__item {
+.form__input {
+  border-radius: 4px;
+  margin: 0 0 32px;
+  box-sizing: border-box;
+  padding: 15px 20px;
   width: 100%;
   height: 60px;
-  box-sizing: border-box;
-  font-size: 14px;
+  font-size: 20px;
+  line-height: 30px;
   font-family: inherit;
-  padding: 15px 20px;
-  margin-bottom: 32px;
+  border-color: #838383;
 }
 
 .form__pseudo-item {
@@ -243,11 +244,14 @@
 }
 
 .form__item-lable {
-  margin: 0;
-  padding-bottom: 8px;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-.form__item-text {
+.form__input-text {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
@@ -256,47 +260,33 @@
   color: #838383;
 }
 
-.form__handlers {
+.form__fieldset {
   border: 0;
+  padding: 0;
   margin: 0;
-  font-size: 0;
+}
+
+.form__fieldset_el_center {
+  display: flex;
+  justify-content: center;
 }
 
 .form__button {
-  display: block;
-  width: 100%;
-  align-content: center;
-  font-family: Inter;
-  font-style: normal;
-  cursor: pointer;
-  background-color: #2f80ed;
-  color: white;
   max-width: 385px;
+  padding: 0 100px;
+  border-radius: 4px;
+  margin-bottom: 32px;
   height: 60px;
   font-weight: 500;
   font-size: 16px;
-  text-align: center;
-  border: 0;
-  border-radius: 4px;
-  margin: 0;
-  margin-bottom: 32px;
-  line-height: 20px;
-}
-
-.form__label_direction_right {
-  display: inline;
-  font-size: 14px;
   line-height: 30px;
-  margin-left: 10px;
-  margin-top: 32px;
+  box-sizing: border-box;
+  background-color: #2f80ed;
+  color: #fff;
 }
 
-.form__iem_el_extra-options {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
+.form__button:hover {
+  opacity: 70%;
 }
 
 .form__checkbox {
@@ -304,17 +294,23 @@
   width: 20px;
   border-radius: 2px;
   background-color: #2f80ed;
-  background-image: url(images\check.svg);
-  margin-bottom: 120px;
+  background-image: url(../images/check.svg);
 }
 
 .form__lable-terminos {
   display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__lable_container-terminos {
+  display: flex;
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  margin: 0;
-  margin-top: 32px;
+  margin-bottom: 120px;
 }
