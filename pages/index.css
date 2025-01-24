@@ -297,20 +297,11 @@
   background-image: url(../images/check.svg);
 }
 
-.form__lable-terminos {
+.form__label-terminos {
   display: block;
+  margin-left: 12px;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-}
-
-.form__lable_container-terminos {
-  display: flex;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 120px;
 }
