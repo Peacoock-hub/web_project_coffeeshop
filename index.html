@@ -12,7 +12,6 @@
     <meta name="author" content="José María Moreno" />
     <title>Cafetería Triplepeaks</title>
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -114,7 +113,7 @@
           <h2 class="reservation__title">Reservar una mesa</h2>
           <form class="form reservation__form">
             <fieldset class="form__fieldset">
-              <label class="form__item-lable" for="name">Nombre *</label>
+              <label class="form__input-lable" for="name">Nombre *</label>
               <input
                 type="text"
                 name="name"
@@ -123,7 +122,7 @@
                 class="form__input"
                 required
               />
-              <label class="form__item-label" for="number-of-clients"
+              <label class="form__input-label" for="number-of-clients"
                 >Número de comensales</label
               >
               <input
@@ -135,14 +134,14 @@
                 placeholder="1-8"
                 class="form__input"
               />
-              <label class="form__item-label" for="date">Fecha y hora</label>
+              <label class="form__input-label" for="date">Fecha y hora</label>
               <input
                 type="datetime-local"
                 name="date"
                 id="date"
                 class="form__input"
               />
-              <label class="form__item-label" for="email"
+              <label class="form__input-label" for="email"
                 >Tu correo electrónico</label
               >
               <input
@@ -171,7 +170,34 @@
           </form>
         </section>
       </main>
-      <footer class="footer" id="Footer"></footer>
+      <footer class="footer" id="footer">
+        <div class="footer__circle"></div>
+        <div class="footer__content">
+          <img class="footer__logo" src="./images/logo_coffeeshop_light.svg" />
+          <div class="footer__social">
+            <h3 class="footer__social-heading">Redes Sociales</h3>
+            <div class="footer__list">
+              <div class="footer__list-item">
+                <img
+                  src="./images/facebook_white.svg"
+                  alt="logo facebook"
+                  class="footer__social-logo"
+                />
+                <a href="#" class="footer__social-link">Facebook</a>
+              </div>
+              <div class="footer__list-item">
+                <img
+                  src="./images/instagram_white.svg"
+                  alt="logo instagram"
+                  class="footer__social-logo"
+                />
+                <a href="#" class="footer__social-link">Instagram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">© 2025 Jose Maria Moreno</div>
+      </footer>
     </div>
   </body>
 </html>
