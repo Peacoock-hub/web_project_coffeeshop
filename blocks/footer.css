@@ -45,12 +45,27 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
+  margin: 0;
 }
 
 .footer__social-logo {
   width: 16px;
   height: 16px;
   margin-right: 10px;
+}
+
+.footer__social-link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__social-link:visited {
+  color: inherit;
 }
 
 .footer__list {
